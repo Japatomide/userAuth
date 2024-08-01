@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+}
+
+#logo {
+  color: #009579;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #009579;
+}
+
+a:hover {
+  color: rgb(64, 102, 102);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+li {
+  list-style: none;
+}
+
+#navbar-container,
+#nav-links {
+  display: flex;
+}
+
+#navbar-container {
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+#nav-links {
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+#hero-text {
+  font-style: italic;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  color: #009579;
+  padding: 10px;
+  position: relative;
+  margin-top: 85px;
+}
+
+@media screen and (max-width: 1000px) {
+  #logo {
+    font-size: 20px;
+  }
+
+  #nav-links {
+    font-size: 18px;
+  }
+}
